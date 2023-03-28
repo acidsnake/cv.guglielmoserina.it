@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply p-6 bg-gray-100;
+}
+
+.App {
+  font-family: 'Roboto';
+  max-width: 900px;
+  @apply p-6 mx-auto bg-white ;
+}
+
+hr {
+  @apply my-4;
+}
+
+@media print {
+  body {
+    padding: 0;
+  }
+  .list {
+    page-break-inside: avoid;
+  }
+}
