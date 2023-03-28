@@ -4,7 +4,7 @@ function List({title, items}) {
   const listItems = items.map(item => {
     return (
       <li key={item.label} className='mb-2'>
-        <b>{parse(item.label)}</b>: {parse(item.value)} 
+        <b>{parse(item.label)}:</b> {parse(item.value)} 
         {item.note ? (
           <>
             <br />

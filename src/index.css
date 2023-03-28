@@ -7,9 +7,9 @@ body {
 }
 
 .App {
-  font-family: 'Roboto';
+  font-family: 'Inter';
   max-width: 900px;
-  @apply p-6 mx-auto bg-white ;
+  @apply p-6 mx-auto bg-white rounded-md;
 }
 
 hr {
@@ -22,5 +22,28 @@ hr {
   }
   .list {
     page-break-inside: avoid;
+  }
+
+  .btn-download-cv {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-bottom: 45px;
+  }
+
+  b {
+    display: block;
+  }
+
+  .btn-download-cv {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 200px;
   }
 }
